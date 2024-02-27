@@ -40,12 +40,12 @@ const LoadingAnimation = ({ children }) => {
       ease: "power2.inOut",
       onUpdate: () => {
         
-        gsap.to(".loadinganimation_logoContainer__D2L9v img", {
-            filter: "brightness(0)",
-            duration: 0,
-            ease: "power2.inOut",
-            delay: 0.6,
-        });
+        // gsap.to(".loadinganimation_logoContainer__D2L9v img", {
+        //     filter: "brightness(0)",
+        //     duration: 0,
+        //     ease: "power2.inOut",
+        //     delay: 0.6,
+        // });
         gsap.to(".loadinganimation_nav__AXHYk h3", {
             color: "#000",
             duration: 0,

@@ -13,33 +13,50 @@ const Container5 = () => {
 
   const { windowSize, isSmallScreen } = useWindowSize();
   useEffect(() => {
-    if (!isSmallScreen) {
-      gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-      console.log("ScrollTrigger Plugin Registered");
+    const mm = gsap.matchMedia();
+    const breakPoint = 768; // Adjust the breakpoint as needed
 
-      let sections = gsap.utils.toArray(".container5_card__zg2lJ");
-      console.log("Sections:", -100 * sections.length - 1);
+    mm.add({
+      isDesktop: `(min-width: ${breakPoint}px)`,
+      isMobile: `(max-width: ${breakPoint - 1}px)`,
+    }, (context) => {
+      const { isDesktop, isMobile } = context.conditions;
 
-      gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1.8),
-        // xPercent: -320,
-        // duration:50,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".container5_cards__sRzh7",
-          start: "bottom 80%",
-          end: "bottom top",
-          scrub: 1,
-          // snap: !isSmallScreen && 1 / (sections.length - 1),
-          // end:"+=1500"
-        },
-      });
+      if (isDesktop) {
+        // ScrollTrigger configuration for desktop
+        let sections = gsap.utils.toArray(".container5_card__zg2lJ");
+        gsap.to(sections, {
+          xPercent: -100 * (sections.length - 1.8),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".container5_cards__sRzh7",
+            start: "bottom 80%",
+            end: "bottom top",
+            scrub: 1,
+          },
+        });
 
-      console.log("ScrollTrigger Setup Complete");
-    }
-  }, [isSmallScreen]);
-  console.log(isSmallScreen, "cBtn6");
+        return () => {
+          // Cleanup for desktop
+          ScrollTrigger.getAll().forEach(st => st.kill());
+        };
+      } else if (isMobile) {
+        // ScrollTrigger configuration for mobile
+        // Add your mobile-specific ScrollTrigger configuration here
+
+        return () => {
+          ScrollTrigger.getAll().forEach(st => st.kill());
+        };
+      }
+
+      return () => {
+        // Default cleanup if neither desktop nor mobile
+      };
+    });
+  }, []);
+  
 
   // useEffect(() => {
   //   if (!isSmallScreen) {
