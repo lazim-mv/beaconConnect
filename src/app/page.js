@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       {/* <LoadingAnimation /> */}
-      <LoadingAnimation>
+      {/* <LoadingAnimation> */}
         <div>
           <Header />
           <MobileHeader />
@@ -50,7 +50,7 @@ export default function Home() {
           <Container7 />
           <Footer />
         </div>
-      </LoadingAnimation>
+      {/* </LoadingAnimation> */}
     </>
   );
 }

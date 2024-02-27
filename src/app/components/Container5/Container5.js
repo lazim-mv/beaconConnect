@@ -10,6 +10,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Container5 = () => {
   const cardData = container5Data.cardData;
+  const color = [
+    "#585569ff",
+    "#f5ece1ff",
+    "#7eb2ccff",
+    "#7d7a7dff",
+    "#24302cff",
+  ];
 
   const { windowSize, isSmallScreen } = useWindowSize();
   useEffect(() => {
@@ -18,57 +25,100 @@ const Container5 = () => {
     const mm = gsap.matchMedia();
     const breakPoint = 768; // Adjust the breakpoint as needed
 
-    mm.add({
-      isDesktop: `(min-width: ${breakPoint}px)`,
-      isMobile: `(max-width: ${breakPoint - 1}px)`,
-    }, (context) => {
-      const { isDesktop, isMobile } = context.conditions;
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+      },
+      (context) => {
+        const { isDesktop, isMobile } = context.conditions;
 
-      if (isDesktop) {
-        // ScrollTrigger configuration for desktop
-        let sections = gsap.utils.toArray(".container5_card__zg2lJ");
-        gsap.to(sections, {
-          xPercent: -100 * (sections.length - 1.8),
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".container5_cards__sRzh7",
-            start: "bottom 80%",
-            end: "bottom top",
-            scrub: 1,
-          },
-        });
+        if (isDesktop) {
+          // ScrollTrigger configuration for desktop
+          let sections = gsap.utils.toArray(".container5_card__zg2lJ");
+
+          gsap.to(sections, {
+            xPercent: -100 * (sections.length - 2),
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".container5_cards__sRzh7",
+              start: "bottom 80%",
+              end: "bottom top",
+              snap: 1 / (sections.length - 1),
+              scrub: 1,
+              // onUpdate: (self) => {
+              //   const progress = self.progress;
+              //   const currentIndex = Math.floor(progress * sections.length);
+
+              //   sections.forEach((section, index) => {
+              //     const opacity = index === currentIndex || index === sections.length - 1 ? 1 : 0;
+
+              //     gsap.to(section, {
+              //       opacity: opacity,
+              //       backgroundColor: color[index],
+              //       immediateRender: false,
+              //     });
+              //   });
+              // },
+              onUpdate: (self) => {
+                const progress = self.progress;
+                const currentIndex = Math.floor(progress * sections.length);
+
+                sections.forEach((section, index) => {
+                  const bgColor = color[index];
+
+                  gsap.to(section, {
+                    backgroundColor: bgColor,
+                    immediateRender: false,
+                  });
+
+                  // Create a pseudo-element for the background
+                  const pseudoElement = document.createElement("div");
+                  pseudoElement.classList.add("background-overlay");
+
+                  // Set opacity based on the condition
+                  pseudoElement.style.opacity =
+                    index === currentIndex || index === sections.length - 1
+                      ? 1
+                      : 0;
+
+                  // Append the pseudo-element to the section
+                  section.appendChild(pseudoElement);
+                });
+              },
+            },
+          });
+
+          return () => {
+            // Cleanup for desktop
+            ScrollTrigger.getAll().forEach((st) => st.kill());
+          };
+        } else if (isMobile) {
+          // ScrollTrigger configuration for mobile
+          // Add your mobile-specific ScrollTrigger configuration here
+
+          return () => {
+            ScrollTrigger.getAll().forEach((st) => st.kill());
+          };
+        }
 
         return () => {
-          // Cleanup for desktop
-          ScrollTrigger.getAll().forEach(st => st.kill());
-        };
-      } else if (isMobile) {
-        // ScrollTrigger configuration for mobile
-        // Add your mobile-specific ScrollTrigger configuration here
-
-        return () => {
-          ScrollTrigger.getAll().forEach(st => st.kill());
+          // Default cleanup if neither desktop nor mobile
         };
       }
-
-      return () => {
-        // Default cleanup if neither desktop nor mobile
-      };
-    });
+    );
   }, []);
-  
 
   // useEffect(() => {
   //   if (!isSmallScreen) {
   //     gsap.registerPlugin(ScrollTrigger);
-  
+
   //     let container = document.querySelector(".container5_cards__sRzh7");
   //     let sections = gsap.utils.toArray(".container5_card__zg2lJ");
-  
+
   //     // Calculate the total width including space between cards
   //     let totalWidth = container.offsetWidth * sections.length - container.offsetWidth;
 
-  
   //     gsap.to(container, {
   //       xPercent: -100 / (totalWidth / container.offsetWidth), // Calculate xPercent
   //       ease: "none",
@@ -84,7 +134,6 @@ const Container5 = () => {
   //     });
   //   }
   // }, [isSmallScreen]);
-  
 
   return (
     <div className={styles.container}>
