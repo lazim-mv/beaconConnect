@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.address}>
         <h6 className={styles.heading}>{footer.address.heading}</h6>
         {footer.address.texts.map((data, index) => (
-          <p className={styles.text} key={index}>
+          <p className={`${styles.text}`} key={index}>
             {data}
           </p>
         ))}
@@ -18,7 +18,7 @@ const Footer = () => {
         <h6 className={styles.heading}>{footer.links.heading}</h6>
         {footer.links.texts.map((data, index) => (
           <a
-            className={styles.text}
+            className={`${styles.text} ${styles.hover}`}
             href={footer.links.href[index]}
             key={index}
           >
@@ -29,9 +29,9 @@ const Footer = () => {
       <div className={styles.social}>
         <h6 className={styles.heading}>{footer.social.heading}</h6>
         {footer.social.texts.map((data, index) => (
-          <p href={data.href} className={styles.text} key={index}>
+          <a href={data.href} className={`${styles.text} ${styles.hover}`} key={index}>
             {data}
-          </p>
+          </a>
         ))}
       </div>
       <div className={styles.bottom}>

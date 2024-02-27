@@ -65,6 +65,11 @@
   margin-bottom: var(--margin30);
 }
 
+.social{
+  display: flex;
+  flex-direction: column;
+}
+
 .linksList{
   display: flex;
   flex-direction: column;
@@ -74,6 +79,15 @@
   color: rgba(255, 255, 255, 1);
   margin-bottom: var(--margin15);
   cursor: pointer;
+}
+
+.hover{
+  display: inline-block;
+  width: fit-content;
+}
+
+.hover:hover{
+  color: rgba(255, 255, 255,0.4);
 }
 
 .bottom {
@@ -122,7 +136,6 @@
     line-height: var(--mlineHeight14);
     letter-spacing: var(--mletterSpace14);
     font-weight: 400;
-
   }
 
   .bottom {

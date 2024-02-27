@@ -71,6 +71,11 @@
   position: relative;
 }
 
+.logoContainer img {
+  width: 11.904761904761903vw;
+  height: 2.976190476190476vw;
+}
+
 .nav h3 {
   font-size: var(--font18);
   line-height: var(--lineHeight18);
@@ -127,5 +132,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .logoContainer img{
+    width: auto;
+    height: 6.666666666666667vw;
   }
 }

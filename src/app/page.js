@@ -19,9 +19,8 @@ import { useWindowSize } from "@react-hook/window-size";
 // import { BtnComponent } from "./components/ButtonComponent";
 
 export default function Home() {
-
   const [windowWidth, windowHeight] = useWindowSize();
-  console.log(windowWidth,"pageWid")
+  console.log(windowWidth, "pageWid");
 
   return (
     <>
@@ -37,15 +36,13 @@ export default function Home() {
           <RevealAffect start={80} end={70}>
             <Container2 />
           </RevealAffect>
-          <RevealAffect>
-            <Container3 />
-          </RevealAffect>
+          <Container5 />
           <RevealAffect>
             <Container4 />
           </RevealAffect>
-          {/* <RevealAffect> */}
-            <Container5 />
-          {/* </RevealAffect> */}
+          <RevealAffect>
+            <Container3 />
+          </RevealAffect>
           <Container6 />
           <RevealAffect>
             <Contact />
