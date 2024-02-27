@@ -1,4 +1,3 @@
-"use client"
 import { useState, useLayoutEffect } from "react";
 
 function useWindowSize() {
@@ -7,9 +6,7 @@ function useWindowSize() {
     height: undefined,
   });
 
-
-
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useLayoutEffect(() => {
     // Handler to call on window resize
