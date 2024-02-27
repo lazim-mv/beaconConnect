@@ -54,7 +54,7 @@
 
 .stickyContainer{
   position: sticky;
-  top: 2vw;
+  top: -2vw;
 
 }
 
