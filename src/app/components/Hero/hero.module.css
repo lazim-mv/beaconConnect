@@ -1,0 +1,117 @@
+.drfault {
+  --font-Roboto: "Roboto", sans-serif;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.920634920634921vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --margin100: 6.613756613756613vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+}
+
+.container1 {
+  position: relative;
+  padding: var(--containerPadding);
+  margin-top: var(--margin100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 h2 {
+  width: 66.86507936507937vw;
+  position: relative;
+  height: auto;
+  text-align: center;
+
+  font-size: 4.9603174603174605vw;
+  font-weight: 400;
+  line-height: 5.952380952380952vw;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.0496031746031746vw;
+  margin: 0 auto;
+}
+
+
+.container1 span:nth-child(4) {
+  padding-left: 10px;
+  
+}
+
+.container1 span:nth-child(6) {
+  padding-right: 10px;
+  
+}
+
+.container1 span:nth-child(7) {
+  padding-left: 10px;
+  
+}
+
+.container1 .actived {
+  opacity: 1;
+  transition: all .25s ease-in 0.25s;
+}
+
+.container1 p {
+  margin: 0 auto;
+  text-align: center;
+  margin: var(--margin30) 0 var(--margin30) 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .container1 {
+    margin-top: calc(21.333333333333336vw + 21.333333333333336vw);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .container1 h2 {
+    width: auto;
+    position: relative;
+
+    font-size: 8.533333333333333vw;
+    font-weight: 400;
+    letter-spacing: 0.021164021164021166vw;
+    line-height: 10.239999999999998vw;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  .container1 p {
+    margin: 2.666666666666667vw 0 5.333333333333334vw 0;
+    width: auto !important;
+    font-size: 3.733333333333334vw;
+    line-height: 5.226666666666667vw;
+    letter-spacing: 0.01851851851851852vw;
+  }
+
+  .container1 span{
+    bottom: 0;
+  }
+
+  .heroImage {
+    height: 146.66666666666666vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .contentContainer {
+    width: 100%;
+    padding: var(--mobileContainerPadding);
+  }
+
+  .contentContainer p {
+    width: 87.2vw !important;
+  }
+
+  .btnImage {
+    width: 21.333333333333336vw;
+    height: 21.333333333333336vw;
+  }
+}
