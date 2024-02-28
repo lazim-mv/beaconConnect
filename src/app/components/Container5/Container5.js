@@ -10,7 +10,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Container5 = () => {
   const cardData = container5Data.cardData;
-  const color = ["#585569ff", "#f5ece1ff", "#7eb2ccff", "#7d7a7dff", "#24302cff"]
+  const color = [
+    "#585569ff",
+    "#f5ece1ff",
+    "#7eb2ccff",
+    "#7d7a7dff",
+    "#24302cff",
+  ];
 
   const { windowSize, isSmallScreen } = useWindowSize();
   useEffect(() => {
@@ -19,58 +25,59 @@ const Container5 = () => {
     const mm = gsap.matchMedia();
     const breakPoint = 768; // Adjust the breakpoint as needed
 
-    mm.add({
-      isDesktop: `(min-width: ${breakPoint}px)`,
-      isMobile: `(max-width: ${breakPoint - 1}px)`,
-    }, (context) => {
-      const { isDesktop, isMobile } = context.conditions;
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+      },
+      (context) => {
+        const { isDesktop, isMobile } = context.conditions;
 
-      if (isDesktop) {
-        // ScrollTrigger configuration for desktop
-        let sections = gsap.utils.toArray(".container5_card__zg2lJ");
-        gsap.to(sections, {
-          xPercent: -100 * (sections.length - 1.8),
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".container5_cards__sRzh7",
-            start: "bottom 80%",
-            end: "bottom top",
-            snap: 1 / (sections.length - 1),
-            scrub: 1,
-          },
-        });
+        if (isDesktop) {
+          // ScrollTrigger configuration for desktop
+          let sections = gsap.utils.toArray(".container5_card__zg2lJ");
+          gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1.8),
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".container5_cards__sRzh7",
+              start: "bottom 80%",
+              end: "bottom top",
+              snap: 1 / (sections.length - 1),
+              scrub: 1,
+            },
+          });
+
+          return () => {
+            // Cleanup for desktop
+            ScrollTrigger.getAll().forEach((st) => st.kill());
+          };
+        } else if (isMobile) {
+          // ScrollTrigger configuration for mobile
+          // Add your mobile-specific ScrollTrigger configuration here
+
+          return () => {
+            ScrollTrigger.getAll().forEach((st) => st.kill());
+          };
+        }
 
         return () => {
-          // Cleanup for desktop
-          ScrollTrigger.getAll().forEach(st => st.kill());
-        };
-      } else if (isMobile) {
-        // ScrollTrigger configuration for mobile
-        // Add your mobile-specific ScrollTrigger configuration here
-
-        return () => {
-          ScrollTrigger.getAll().forEach(st => st.kill());
+          // Default cleanup if neither desktop nor mobile
         };
       }
-
-      return () => {
-        // Default cleanup if neither desktop nor mobile
-      };
-    });
+    );
   }, []);
-  
 
   // useEffect(() => {
   //   if (!isSmallScreen) {
   //     gsap.registerPlugin(ScrollTrigger);
-  
+
   //     let container = document.querySelector(".container5_cards__sRzh7");
   //     let sections = gsap.utils.toArray(".container5_card__zg2lJ");
-  
+
   //     // Calculate the total width including space between cards
   //     let totalWidth = container.offsetWidth * sections.length - container.offsetWidth;
 
-  
   //     gsap.to(container, {
   //       xPercent: -100 / (totalWidth / container.offsetWidth), // Calculate xPercent
   //       ease: "none",
@@ -86,23 +93,24 @@ const Container5 = () => {
   //     });
   //   }
   // }, [isSmallScreen]);
-  
 
   return (
     <div className={styles.container}>
       <div className={styles.stickyContainer}>
-        <SectionName sectionText={container5Data.sectionName} />
-        <div className={styles.tittle}>
-          <SectionTitle sectionText={container5Data.sectionTitle} />
-          {!isSmallScreen && (
-            <BtnComponent
-              buttonText={container5Data.btnText}
-              borderColor="rgba(255, 255, 255, 0.6)"
-              bg="transparent"
-              color="#fff"
-              arrow={true}
-            />
-          )}
+        <div className={styles.topHeadingContainer}>
+          <SectionName sectionText={container5Data.sectionName} />
+          <div className={styles.tittle}>
+            <SectionTitle sectionText={container5Data.sectionTitle} />
+            {!isSmallScreen && (
+              <BtnComponent
+                buttonText={container5Data.btnText}
+                borderColor="rgba(255, 255, 255, 0.6)"
+                bg="transparent"
+                color="#fff"
+                arrow={true}
+              />
+            )}
+          </div>
         </div>
         <div className={styles.cards}>
           {cardData.map((data, index) => (

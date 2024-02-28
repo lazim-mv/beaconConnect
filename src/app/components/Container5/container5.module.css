@@ -46,16 +46,19 @@
   --mletterSpace18: 0.4266666666666667vw;
 }
 .container {
-  padding: var(--containerPadding);
+  padding-left: 6.613756613756613vw;
   margin: var(--containerMarginTop) 0;
-  height: 200vh ;
-
+  height: 200vh;
 }
 
-.stickyContainer{
+.topHeadingContainer {
+  padding-right: 6.613756613756613vw;
+}
+
+.stickyContainer {
   position: sticky;
   top: -2vw;
-
+  overflow: hidden;
 }
 
 .tittle {
@@ -133,7 +136,7 @@
     margin-top: 0;
   }
 
-  .stickyContainer{
+  .stickyContainer {
     position: relative;
   }
 
