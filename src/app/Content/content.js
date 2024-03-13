@@ -30,16 +30,17 @@ const heroData = {
 
 const container1Data = {
   img: "/Container1/1.png",
+  mImg: "/Container1/1m.png",
   btnText: "About Us",
   description1:
-    "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+    "At the heart of our philosophy lies the belief that a brand's essence and user experience (UX) are intrinsically linked, forming the cornerstone of digital identity. Our dedicated team excels in shaping and projecting digital brand identities across various platforms, offering strategic support and guidelines to ensure seamless consistency. ",
   description2:
-    "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+    "Join us at Nexwave, where we turn visionary ideas into tangible realities, fostering growth and redefining what it means to be a brand in the digital age.",
 };
 
 const container2Data = {
   sectionName: "Services",
-  sectionTitle: "Our Capabilities",
+  sectionTitle: "How We Help",
   img: "/Container2/1.png",
   arrowImg: "/Container2/1.svg",
   btnText: "Know More",
@@ -49,31 +50,31 @@ const container2Data = {
       cardHeading: "Digital Strategy",
       img: "/Container2/1.png",
       description:
-        "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
+        "Maximize growth with our strategic, technology-led approach. We tailor digital initiatives to your goals, enhancing brand visibility and driving conversions for impactful results in the digital arena.",
     },
     {
-      cardHeading: "Digital Strategy",
+      cardHeading: "Design",
       img: "/Container2/2.png",
       description:
-        "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
+        "Craft compelling user experiences with our design services. We focus on creating visually stunning and highly usable designs that resonate with your audience and strengthen your brand identity.",
     },
     {
-      cardHeading: "Digital Strategy",
+      cardHeading: "Development",
       img: "/Container2/3.png",
       description:
-        "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
+        "Build the foundation of your digital success with our development services. From web to mobile apps, we deliver robust, scalable, and intuitive solutions that meet your business needs and exceed user expectations.",
     },
     {
-      cardHeading: "Digital Strategy",
+      cardHeading: "Business Intelligence",
       img: "/Container2/4.png",
       description:
-        "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
+        "Fuel your brand's growth with our targeted marketing strategies. We combine creativity with analytics to boost your online presence, engage your audience, and achieve sustainable growth.",
     },
     {
-      cardHeading: "Digital Strategy",
-      img: "/Container2/1.png",
+      cardHeading: "Artificial Intelligence",
+      img: "/Container2/5.png",
       description:
-        "Art Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral DesignArt Direction • Logo Design • Visual Identity • Brand Style Guide • 2D & 3D Motion Design • Collateral Design",
+        "Leverage the power of data and AI to gain a competitive edge. Our expertise in AI integration and data analytics transforms your processes, making your digital products smarter and more user-centric.",
     },
   ],
 };
@@ -128,8 +129,8 @@ const container3Data = {
 };
 
 const container5Data = {
-  sectionName: "OUR WORK",
-  sectionTitle: "Selected Work",
+  sectionName: "OUR PROJECTS",
+  sectionTitle: "Featured Projects",
   btnText: "All Work",
   cardData: [
     {
@@ -287,7 +288,7 @@ const footer = {
   links: {
     heading: "Quick Link",
     texts: ["Home", "About Us", "Services", "Blog", "Contact Us"],
-    href:["/","pages/About","pages/Services","","pages/Contact"]
+    href: ["/", "pages/About", "pages/Services", "", "pages/Contact"],
   },
   social: {
     heading: "Follow Us",

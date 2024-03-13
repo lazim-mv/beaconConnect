@@ -20,7 +20,7 @@ const Container4 = () => {
       </div>
       <div className={styles.content}>
         <SectionTitle
-          sectionText="artificial intelligence technologies"
+          sectionText="Artificial intelligence "
           padding="0 0 1.3227513227513228vw 0"
         />
         <SectionDescription

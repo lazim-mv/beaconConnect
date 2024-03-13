@@ -24,7 +24,7 @@ function Header() {
         <a href="/">
           <div className={styles.logoContainer}>
             <Image
-              src="/hLogo.svg"
+              src="/Beblue.svg"
               width={180}
               height={60}
               alt="ImageHeader"
