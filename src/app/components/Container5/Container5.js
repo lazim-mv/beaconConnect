@@ -23,7 +23,7 @@ const Container5 = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const mm = gsap.matchMedia();
-    const breakPoint = 768; // Adjust the breakpoint as needed
+    const breakPoint = 768;
 
     mm.add(
       {
@@ -43,56 +43,25 @@ const Container5 = () => {
               trigger: ".container5_cards__sRzh7",
               start: "bottom 80%",
               end: "bottom top",
-              snap: 1 / (sections.length - 1),
               scrub: 1,
             },
           });
 
           return () => {
-            // Cleanup for desktop
             ScrollTrigger.getAll().forEach((st) => st.kill());
           };
         } else if (isMobile) {
-          // ScrollTrigger configuration for mobile
-          // Add your mobile-specific ScrollTrigger configuration here
-
           return () => {
             ScrollTrigger.getAll().forEach((st) => st.kill());
           };
         }
 
         return () => {
-          // Default cleanup if neither desktop nor mobile
+          ScrollTrigger.getAll().forEach((st) => st.kill());
         };
       }
     );
   }, []);
-
-  // useEffect(() => {
-  //   if (!isSmallScreen) {
-  //     gsap.registerPlugin(ScrollTrigger);
-
-  //     let container = document.querySelector(".container5_cards__sRzh7");
-  //     let sections = gsap.utils.toArray(".container5_card__zg2lJ");
-
-  //     // Calculate the total width including space between cards
-  //     let totalWidth = container.offsetWidth * sections.length - container.offsetWidth;
-
-  //     gsap.to(container, {
-  //       xPercent: -100 / (totalWidth / container.offsetWidth), // Calculate xPercent
-  //       ease: "none",
-  //       scrollTrigger: {
-  //         trigger: container,
-  //         start: "bottom 80%",
-  //         end: "bottom top",
-  //         scrub: 1,
-  //         onUpdate: (e) => {
-  //           console.log("xPercent:", e.progress * 100);
-  //         },
-  //       },
-  //     });
-  //   }
-  // }, [isSmallScreen]);
 
   return (
     <div className={styles.container}>
@@ -131,11 +100,7 @@ const Container5 = () => {
                   borderColor="rgba(255, 255, 255, 0.6)"
                   bg="transparent"
                   color="#fff"
-                  width={
-                    isSmallScreen
-                      ? "29.333333333333332vw"
-                      : "8.862433862433862vw"
-                  }
+                  width="max-content"
                   height="2.976190476190476vw"
                   arrow={true}
                 />

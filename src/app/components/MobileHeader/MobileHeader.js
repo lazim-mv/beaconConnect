@@ -130,7 +130,7 @@ function MobileHeader() {
               <BtnComponent
                 buttonText="Get in Touch"
                 header={true}
-                bg="#13670B"
+                bg="#11215B"
                 arrow={true}
                 color="#ffffff"
               />

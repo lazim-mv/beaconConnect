@@ -14,8 +14,11 @@ import {
 import Contact from "@/app/components/Contact/Contact";
 import Footer from "@/app/components/Footer/Footer";
 import RevealAffect from "@/app/components/GsapComponents/RevealAffect";
+import { useWindowSize } from "@/app/utils/windowSize";
 
-const page = () => {
+const Page = () => {
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <>
       <Header />
@@ -25,7 +28,7 @@ const page = () => {
           <SectionTitle sectionText={container1.sectionTitle} />
           <Image
             unoptimized
-            src={container1.img}
+            src={isSmallScreen ? container1.mImg : container1.img}
             width={100}
             height={0}
             alt="ImageClients"
@@ -67,7 +70,7 @@ const page = () => {
           <div className={styles.imgContainer}>
             <Image
               unoptimized
-              src={container2.img}
+              src={isSmallScreen ? container2.mImg : container2.img}
               width={100}
               height={0}
               alt="ImageClients"
@@ -77,25 +80,26 @@ const page = () => {
         </div>
       </RevealAffect>
 
-      <RevealAffect>
-        <div className={`${styles.container3} `}>
-          <SectionTitle sectionText={container3.sectionTitle} />
-          {container3.cardData.map((data, index) => (
-            <div className={styles.vCard} key={index}>
-              <Image
-                unoptimized
-                src={data.img}
-                width={100}
-                height={0}
-                alt="ImageClients"
-                className={styles.icon}
-              />
-              <CardHeading sectionText={data.cardHeading} />
-              <SectionDescription sectionText={data.description} />
-            </div>
-          ))}
-        </div>
-      </RevealAffect>
+      <div className={`${styles.container3} `}>
+        <SectionTitle sectionText={container3.sectionTitle} />
+        {container3.cardData.map((data, index) => (
+          <RevealAffect key={index}>
+          <div className={styles.vCard} key={index}>
+            <Image
+              unoptimized
+              src={data.img}
+              width={100}
+              height={0}
+              alt="ImageClients"
+              className={styles.icon}
+            />
+            <CardHeading sectionText={data.cardHeading} />
+            <SectionDescription sectionText={data.description} />
+          </div>
+          </RevealAffect>
+        ))}
+      </div>
+
       <RevealAffect>
         <Contact page={true} />
       </RevealAffect>
@@ -104,4 +108,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

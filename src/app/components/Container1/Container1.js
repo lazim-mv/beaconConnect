@@ -22,7 +22,7 @@ const Container1 = () => {
     <div className={`${styles.container} `}>
       <Image
         unoptimized
-        src={container1Data.img}
+        src={isSmallScreen ? container1Data.mImg : container1Data.img}
         width={100}
         height={0}
         alt="ImageClients"
@@ -48,7 +48,7 @@ const Container1 = () => {
           <span className={styles.span2}>{container1Data.description2}</span>
         </p>
       </div>
-      <a href="pages/About">
+      <a href="pages/Contact">
         <BtnComponent
           buttonText={container1Data.btnText}
           borderColor="rgba(255, 255, 255, 0.6)"

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 :root {
+  --font-Sora: "Sora", sans-serif;
   --font-Roboto: "Roboto", sans-serif;
   --containerPadding: 0 6.613756613756613vw;
   --containerMarginTop: 9.920634920634921vw;
@@ -73,7 +75,7 @@ h1 {
   font-weight: 400;
   line-height: 5.952380952380952vw;
   color: #fff;
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   text-transform: capitalize;
   letter-spacing: 0.0496031746031746vw;
 }
@@ -83,7 +85,7 @@ h2 {
   font-weight: 400;
   line-height: 3.7202380952380953vw;
   color: #fff;
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   text-transform: capitalize;
   letter-spacing: 0.06349206349206349vw;
 }
@@ -93,7 +95,7 @@ h3 {
   font-weight: 400;
   line-height: 2.4801587301587302vw;
   color: #fff;
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   text-transform: capitalize;
   letter-spacing: 0.05026455026455026vw;
 }
@@ -103,7 +105,7 @@ h4 {
   font-weight: 400;
   line-height: 1.6666666666666667vw;
   color: rgba(255, 255, 255, 0.6);
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   text-transform: capitalize;
   letter-spacing: 0.023809523809523808vw;
 }
@@ -113,7 +115,7 @@ h5 {
   font-weight: 400;
   line-height: 1.6666666666666667vw;
   color: #fff;
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   text-transform: capitalize;
   letter-spacing: 0.023809523809523808vw;
 }
@@ -123,13 +125,13 @@ p {
   font-weight: 400;
   line-height: 1.8518518518518516vw;
   color: rgba(255, 255, 255, 0.6);
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   font-feature-settings: "liga" 0;
   letter-spacing: 0.026455026455026457vw;
 }
 
 span {
-  /* color: #13670B; */
+  /* color: #11215B; */
   text-transform: capitalize;
 }
 
@@ -137,7 +139,7 @@ span {
   font-size: 1.1904761904761905vw;
   font-weight: 400;
   line-height: 1.6666666666666667vw;
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   font-feature-settings: "liga" 0;
 }
 
@@ -147,12 +149,12 @@ a {
   font-weight: 400;
   line-height: 1.9047619047619049vw;
   color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-Roboto);
+  font-family: var(--font-Sora);
   font-feature-settings: "liga" 0;
 }
 
-.highlighted{
-  background-color: #13670B;
+.highlighted {
+  background-color: #11215B;
 }
 
 .linksText {
@@ -161,12 +163,12 @@ a {
 }
 
 .active h4 {
-  /* color: #13670B; */
+  /* color: #11215B; */
   font-weight: 400;
 }
 
 .active {
-  color: #13670B;
+  color: #11215B;
   font-weight: 400;
 }
 
@@ -202,11 +204,10 @@ a {
   transition: border 0.3s ease;
 }
 
-
 .btnContainer::before {
   position: absolute;
   content: "";
-  background: #13670B;
+  background: #11215B;
   width: 0;
   height: 100%;
   z-index: -1;
@@ -395,7 +396,6 @@ a {
     height: 9.866666666666667vw !important;
     border-radius: 9.866666666666667vw;
   }
-
 
   .arrow {
     height: 2.666666666666667vw;

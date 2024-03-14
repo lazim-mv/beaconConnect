@@ -53,6 +53,7 @@
 
 .container h2 {
   margin-bottom: var(--margin70);
+  width: 60.317460317460316vw;
 }
 
 .container p {
@@ -112,7 +113,7 @@
   display: grid;
   gap: 3.968253968253968vw;
   grid-template-columns: 41.4021164021164vw 41.4021164021164vw;
-  grid-template-rows: 15.608465608465607vw 19.841269841269842vw;
+  grid-template-rows: 17.608465608465607vw 19.841269841269842vw;
 }
 
 .container2 p {
@@ -183,6 +184,7 @@
   font-size: var(--font18);
   line-height: var(--lineHeight18);
   letter-spacing: var(--letterSpace18);
+  height: 16.5vw;
 }
 
 @media only screen and (max-width: 767px) {
@@ -194,6 +196,7 @@
   .container h2 {
     margin-bottom: 8vw;
     text-align: left;
+    width: auto;
   }
 
   .container p {
@@ -275,21 +278,22 @@
   }
 
   .icon {
-    height:10.666666666666668vw;
-    width:10.666666666666668vw;
+    height: 10.666666666666668vw;
+    width: 10.666666666666668vw;
     margin-bottom: 4vw;
   }
-  
+
   .vCard h3 {
     font-size: var(--mfont16);
     line-height: var(--lineHeight16);
     letter-spacing: var(--letterSpace16);
   }
-  
+
   .vCard p {
     margin-top: 2.666666666666667vw;
     font-size: var(--mfont12);
     line-height: var(--mlineHeight12);
     letter-spacing: var(--mletterSpace12);
-  } 
+    height: auto;
+  }
 }

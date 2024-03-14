@@ -52,7 +52,7 @@
 }
 
 .innerContainer {
-  background-color: #13670B;
+  background-color: #11215B;
   /* height: 50vh; */
   display: flex;
   gap: 14.02116402116402vw;
@@ -86,7 +86,7 @@
   }
 
   .innerContainer {
-    background-color: #13670B;
+    background-color: #11215B;
     display: flex;
     flex-direction: column;
     gap: 0;

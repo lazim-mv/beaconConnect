@@ -83,7 +83,7 @@ const page = () => {
             <BtnComponent
               buttonText="Send Message"
               // borderColor="rgba(255, 255, 255, 0.6)"
-              bg="#13670B"
+              bg="#11215B"
               color="#fff"
               contact={true}
             />

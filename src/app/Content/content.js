@@ -29,9 +29,9 @@ const heroData = {
 };
 
 const container1Data = {
-  img: "/Container1/1.png",
+  img: "/Container1/2.png",
   mImg: "/Container1/1m.png",
-  btnText: "About Us",
+  btnText: "Contact Us",
   description1:
     "At the heart of our philosophy lies the belief that a brand's essence and user experience (UX) are intrinsically linked, forming the cornerstone of digital identity. Our dedicated team excels in shaping and projecting digital brand identities across various platforms, offering strategic support and guidelines to ensure seamless consistency. ",
   description2:
@@ -53,10 +53,10 @@ const container2Data = {
         "Maximize growth with our strategic, technology-led approach. We tailor digital initiatives to your goals, enhancing brand visibility and driving conversions for impactful results in the digital arena.",
     },
     {
-      cardHeading: "Design",
-      img: "/Container2/2.png",
+      cardHeading: "Artificial Intelligence",
+      img: "/Container2/5.png",
       description:
-        "Craft compelling user experiences with our design services. We focus on creating visually stunning and highly usable designs that resonate with your audience and strengthen your brand identity.",
+        "Leverage the power of data and AI to gain a competitive edge. Our expertise in AI integration and data analytics transforms your processes, making your digital products smarter and more user-centric.",
     },
     {
       cardHeading: "Development",
@@ -65,16 +65,16 @@ const container2Data = {
         "Build the foundation of your digital success with our development services. From web to mobile apps, we deliver robust, scalable, and intuitive solutions that meet your business needs and exceed user expectations.",
     },
     {
+      cardHeading: "Design",
+      img: "/Container2/2.png",
+      description:
+        "Craft compelling user experiences with our design services. We focus on creating visually stunning and highly usable designs that resonate with your audience and strengthen your brand identity.",
+    },
+    {
       cardHeading: "Business Intelligence",
       img: "/Container2/4.png",
       description:
         "Fuel your brand's growth with our targeted marketing strategies. We combine creativity with analytics to boost your online presence, engage your audience, and achieve sustainable growth.",
-    },
-    {
-      cardHeading: "Artificial Intelligence",
-      img: "/Container2/5.png",
-      description:
-        "Leverage the power of data and AI to gain a competitive edge. Our expertise in AI integration and data analytics transforms your processes, making your digital products smarter and more user-centric.",
     },
   ],
 };
@@ -134,29 +134,24 @@ const container5Data = {
   btnText: "All Work",
   cardData: [
     {
-      img: "/Container5/BeaconConnect/1.png",
-      cardHeading: "Package Design",
-      btnText: "Branding",
+      img: "/Container5/nexwave/1.png",
+      cardHeading: "Beacon Management Consultants",
+      btnText: "Website",
     },
     {
-      img: "/Container5/BeaconConnect/2.png",
-      cardHeading: "Package Design",
-      btnText: "Branding",
+      img: "/Container5/nexwave/2.png",
+      cardHeading: "Gisco Contracting Company",
+      btnText: "Website",
     },
     {
-      img: "/Container5/BeaconConnect/3.png",
-      cardHeading: "Package Design",
-      btnText: "Branding",
+      img: "/Container5/nexwave/3.png",
+      cardHeading: "Petbey App",
+      btnText: "Mobile App",
     },
     {
-      img: "/Container5/BeaconConnect/4.png",
-      cardHeading: "Package Design",
-      btnText: "Branding",
-    },
-    {
-      img: "/Container5/BeaconConnect/5.png",
-      cardHeading: "Package Design",
-      btnText: "Branding",
+      img: "/Container5/nexwave/5.png",
+      cardHeading: "Hyperama",
+      btnText: "Ecommerce",
     },
   ],
 };
@@ -167,42 +162,41 @@ const container6Data = {
   cardData: [
     {
       number: "01",
-      img: "/Container6/BeaconConnect/1.png",
-      cardHeading: "Digital Strategy",
+      img: "/Container6/1.png",
+      cardHeading: "Research",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+        "We begin with thorough research to understand market trends and gather insights, ensuring a data-driven foundation for every project.",
     },
     {
       number: "02",
-      img: "/Container6/BeaconConnect/2.png",
-      cardHeading: "Digital Strategy",
+      img: "/Container6/2.png",
+      cardHeading: "Strategy",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+        "Setting clear goals based on our findings, we outline your project's direction and objectives for targeted outcomes.",
     },
     {
       number: "03",
-      img: "/Container6/BeaconConnect/3.png",
-      cardHeading: "Digital Strategy",
+      img: "/Container6/3.png",
+      cardHeading: "Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+        "Our creative team translates strategic insights into compelling designs, crafting a resonant and engaging user experience.",
     },
     {
       number: "04",
-      img: "/Container6/BeaconConnect/4.png",
-      cardHeading: "Digital Strategy",
+      img: "/Container6/4.png",
+      cardHeading: "Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+        "Turning designs into reality, we develop robust solutions that are ready for a successful market launch.",
     },
     {
       number: "05",
-      img: "/Container6/BeaconConnect/5.png",
-      cardHeading: "Digital Strategy",
+      img: "/Container6/5.png",
+      cardHeading: "Launch",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+        "With a strategic launch, we introduce your product to the market, followed by ongoing optimization for lasting success.",
     },
   ],
 };
-
 const container7Data = {
   sectionName: "BLOG",
   sectionTitle: "Our Insights",

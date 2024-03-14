@@ -68,8 +68,7 @@
 .bgContainer {
   margin-top: var(--margin70);
   background: var(--bgColor);
-  padding: 6.613756613756613vw 6.613756613756613vw 14.219576719576722vw
-    6.613756613756613vw;
+  padding: 6.613756613756613vw;
 }
 
 .bgContainer input::placeholder {
@@ -113,7 +112,7 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border: 0.06613756613756613vw solid #13670B;
+  border: 0.06613756613756613vw solid #11215B;
   border-radius: 50%;
   width: 1.984126984126984vw;
   height: 1.984126984126984vw;
@@ -130,7 +129,7 @@
   transform: translate(-50%, -50%);
   width: 0.7936507936507936vw; /* Adjust as needed */
   height: 0.7936507936507936vw; /* Adjust as needed */
-  background-color: #13670B;
+  background-color: #11215B;
   border-radius: 50%;
 }
 
@@ -269,7 +268,7 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border: 0.26666666666666666vw solid #13670B;
+    border: 0.26666666666666666vw solid #11215B;
     border-radius: 50%;
     width: 5.333333333333334vw;
     height: 5.333333333333334vw;
