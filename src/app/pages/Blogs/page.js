@@ -21,19 +21,16 @@ const Page = () => {
     const searchParams = new URLSearchParams(window.location.search);
     const searchData = searchParams.get("search");
     const parsedData = searchData ? JSON.parse(searchData) : [];
-    console.log(parsedData, "DataArray");
     setDataArray(parsedData);
-    console.log(dataArray, "Link clickeddddd");
 
     setLoading(true);
   }, []);
 
   useEffect(() => {
-    console.log(dataArray, "Link clickeddddd");
 
-    if (dataArray.titleImage) {
-      console.log(urlFor(dataArray.titleImage).url(), "LinkImg clickeddddd");
-    }
+    // if (dataArray.titleImage) {
+    //   console.log(urlFor(dataArray.titleImage).url(), "LinkImg clickeddddd");
+    // }
   }, [dataArray]);
 
   if (loading) {

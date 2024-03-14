@@ -16,15 +16,13 @@ function Header() {
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
-  console.log(pathname,"path")
-
   return (
     <>
       <div className={`${styles.hContainer} ${styles.bgWhite}`}>
         <a href="/">
           <div className={styles.logoContainer}>
             <Image
-              src="/Beblue.svg"
+              src="/hLogo.svg"
               width={180}
               height={60}
               alt="ImageHeader"

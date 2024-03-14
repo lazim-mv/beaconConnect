@@ -104,6 +104,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.8s ease;
 }
 
 @media only screen and (max-width: 767px) {
@@ -156,14 +157,14 @@
     width: 79.2vw !important;
   }
 
-  .serviceImgContainer{
+  .serviceImgContainer {
     width: 79.2vw;
     height: 86.74400000000001vw;
     margin-top: 4vw;
     position: relative;
   }
 
-  .serviceImg{
+  .serviceImg {
     width: 100%;
     height: 100%;
   }

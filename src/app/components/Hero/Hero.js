@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       <div className={styles.container1}>
         <SectionTitle
-          sectionText="We're a global UI UX design agency curating experiences"
+          sectionText="Unlocking Digital Potential: Where Vision Becomes Reality"
           color="#fff"
           wordIndex={[3, 4, 5, 6]}
         />

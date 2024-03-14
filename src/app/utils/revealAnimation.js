@@ -31,8 +31,8 @@ function applyRevealLogic(element) {
   const windowHeight = window.innerHeight;
   const revealTop = element.getBoundingClientRect().top;
   const revealPoint = 0;
-  console.log(windowHeight - revealPoint,"reveal")
-  console.log(windowHeight,"revealw")
+  // console.log(windowHeight - revealPoint,"reveal")
+  // console.log(windowHeight,"revealw")
 
   if (revealTop < windowHeight - revealPoint) {
     element.classList.add("actived");

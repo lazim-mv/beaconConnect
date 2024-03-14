@@ -1,8 +1,8 @@
 const heroData = {
-  sectionTitle: "We're a global UI UX design agency curating experiences",
+  sectionTitle: "Unlocking Digital Potential: Where Vision Becomes Reality",
   btnText: "Our Services",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Vel aliquam feugiat proin tincidunt feugiat viverra. Commodo etiam vestibulum quam tristique non venenatis sed.",
+    "Beacube unlocks your digital potential, turning vision into reality. Explore our transformative solutions and unleash the power of your brand.",
   texts: [
     "scale businesses",
     "transform lives",

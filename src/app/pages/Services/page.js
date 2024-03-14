@@ -26,7 +26,7 @@ const Page = () => {
   const { windowSize, isSmallScreen } = useWindowSize();
 
   const lenis = useLenis(({ scroll }) => {
-    console.log(isSmallScreen, "is");
+    // console.log(isSmallScreen, "is");
     // console.log('Scroll information:', scroll);
   });
 
