@@ -17,7 +17,7 @@ const Container4 = () => {
     <div className={styles.container}>
       <div className={styles.widthAdjust}>
         <div className={styles.splineObject}>
-          <Spline scene="https://prod.spline.design/eaoXum74o6-cbhF4/scene.splinecode" />
+          <Spline scene="'https://prod.spline.design/eaoXum74o6-cbhF4/scene.splinecode" />
         </div>
       </div>
       <div className={styles.content}>

@@ -26,7 +26,7 @@ const Page = () => {
   const { windowSize, isSmallScreen } = useWindowSize();
 
   const lenis = useLenis(({ scroll }) => {
-    // console.log(isSmallScreen, "is");
+    console.log(isSmallScreen, "is");
     // console.log('Scroll information:', scroll);
   });
 
@@ -67,17 +67,17 @@ const Page = () => {
         >
           {container2.cardData.map((data, index) => (
             <div className={styles.card} key={index} id={data.id}>
-              <div className={styles.serviceImgContainer}>
-                <RevealAffect>
+              {/* <RevealAffect> */}
+                <div className={styles.serviceImgContainer}>
                   <ServiceImageAffect
-                    speed={isSmallScreen ? 0.8 : 1.2}
-                    height={isSmallScreen ? "80vw" : "auto"}
+                    speed={isSmallScreen ? 20 : 60}
+                    height={isSmallScreen ? "auto" : "auto"}
                     width={isSmallScreen ? "87.2vw" : "auto"}
                   >
                     <Image
                       // ref={(ref) => (cardImg.current[index] = ref)}
                       unoptimized
-                      src={data.img}
+                      src={isSmallScreen ? data.mImg : data.img}
                       priority={true}
                       width={100}
                       height={0}
@@ -85,14 +85,14 @@ const Page = () => {
                       className={styles.serviceImg}
                     />
                   </ServiceImageAffect>
-                </RevealAffect>
-              </div>
-              <SectionTitle sectionText={data.sectionTitle} />
-              <div className={styles.descContainer}>
-                <SectionDescription sectionText={data.description1} />
-                <SectionDescription sectionText={data.description2} />
-              </div>
-              <hr />
+                </div>
+                <SectionTitle sectionText={data.sectionTitle} />
+                <div className={styles.descContainer}>
+                  <SectionDescription sectionText={data.description1} />
+                  {/* <SectionDescription sectionText={data.description2} /> */}
+                </div>
+                <hr />
+              {/* </RevealAffect> */}
             </div>
           ))}
         </div>

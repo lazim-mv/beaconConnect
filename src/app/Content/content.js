@@ -71,7 +71,7 @@ const container2Data = {
         "Craft compelling user experiences with our design services. We focus on creating visually stunning and highly usable designs that resonate with your audience and strengthen your brand identity.",
     },
     {
-      cardHeading: "Business Intelligence",
+      cardHeading: "Marketing & Growth",
       img: "/Container2/4.png",
       description:
         "Fuel your brand's growth with our targeted marketing strategies. We combine creativity with analytics to boost your online presence, engage your audience, and achieve sustainable growth.",
@@ -152,6 +152,11 @@ const container5Data = {
       img: "/Container5/nexwave/5.png",
       cardHeading: "Hyperama",
       btnText: "Ecommerce",
+    },
+    {
+      img: "/Container5/nexwave/6.png",
+      cardHeading: "Riyas Hakkim",
+      btnText: "Personal Portfolio",
     },
   ],
 };
