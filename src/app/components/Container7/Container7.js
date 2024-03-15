@@ -8,7 +8,7 @@ import { useWindowSize } from "@/app/utils/windowSize";
 import fetchDataAndExport, { urlFor } from "@/app/api/blog";
 import Link from "next/link";
 
-const Container7 = ({ header, blogPage }) => {
+const Container7 = ({ header, blogPage, homePage }) => {
   // const cardData = container7Data.cardData;
   const { windowSize, isSmallScreen } = useWindowSize();
 
@@ -61,6 +61,24 @@ const Container7 = ({ header, blogPage }) => {
             (isSmallScreen && header) || (isSmallScreen && blogPage)
               ? "column"
               : "row",
+          maxHeight:
+            homePage && isSmallScreen
+              ? ""
+              : homePage && !isSmallScreen
+              ? "400px"
+              : "",
+          flexWrap:
+            homePage && isSmallScreen
+              ? ""
+              : homePage && !isSmallScreen
+              ? "wrap"
+              : "",
+          overflow:
+            homePage && isSmallScreen
+              ? ""
+              : homePage && !isSmallScreen
+              ? "hidden"
+              : "",
         }}
       >
         {blogData.map((data, index) => (
@@ -77,8 +95,14 @@ const Container7 = ({ header, blogPage }) => {
               <div
                 className={styles.imgContainer}
                 style={{
-                  width: (isSmallScreen && header) || (isSmallScreen && blogPage) ? "87.2vw" : "",
-                  height: (isSmallScreen && header) || (isSmallScreen && blogPage) ? "73.33333333333333vw" : "",
+                  width:
+                    (isSmallScreen && header) || (isSmallScreen && blogPage)
+                      ? "87.2vw"
+                      : "",
+                  height:
+                    (isSmallScreen && header) || (isSmallScreen && blogPage)
+                      ? "73.33333333333333vw"
+                      : "",
                 }}
               >
                 <Image

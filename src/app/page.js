@@ -43,7 +43,7 @@ export default function Home() {
           <RevealAffect>
             <Contact />
           </RevealAffect>
-          <Container7 />
+          <Container7 homePage={true} />
           <Footer />
         </div>
       {/* </LoadingAnimation> */}
