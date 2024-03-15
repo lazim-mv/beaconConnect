@@ -89,7 +89,7 @@ const Page = () => {
                 <SectionTitle sectionText={data.sectionTitle} />
                 <div className={styles.descContainer}>
                   <SectionDescription sectionText={data.description1} />
-                  {/* <SectionDescription sectionText={data.description2} /> */}
+                  <SectionDescription sectionText={data.description2} />
                 </div>
                 <hr />
               {/* </RevealAffect> */}
