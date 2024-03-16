@@ -134,27 +134,27 @@ const container5Data = {
   btnText: "All Work",
   cardData: [
     {
-      img: "/Container5/nexwave/1.png",
+      img: "/Container5/Beacube/1.png",
       cardHeading: "Beacon Management Consultants",
       btnText: "Website",
     },
     {
-      img: "/Container5/nexwave/2.png",
+      img: "/Container5/Beacube/2.png",
       cardHeading: "Gisco Contracting Company",
       btnText: "Website",
     },
     {
-      img: "/Container5/nexwave/3.png",
+      img: "/Container5/Beacube/3.png",
       cardHeading: "Petbey App",
       btnText: "Mobile App",
     },
     {
-      img: "/Container5/nexwave/5.png",
+      img: "/Container5/Beacube/5.png",
       cardHeading: "Hyperama",
       btnText: "Ecommerce",
     },
     {
-      img: "/Container5/nexwave/6.png",
+      img: "/Container5/Beacube/6.png",
       cardHeading: "Riyas Hakkim",
       btnText: "Personal Portfolio",
     },
@@ -235,34 +235,38 @@ const container8Data = {
   faqData: [
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "What sets Beacube Digital apart in the realm of branding and technology?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Beacube Digital combines modern design with advanced technology to create unparalleled digital experiences, setting new benchmarks for excellence and elevating brands to new heights.",
       isAnswerVisible: true,
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "What services does Beacube offer to enhance digital initiatives and brand visibility?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Beacube offers a range of services including digital strategy, technology transformation, data & AI integration, development, design, and marketing & growth strategies tailored to maximize growth and drive conversions for impactful results in the digital arena.",
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "Can you provide examples of Beacube's successful partnerships and client testimonials?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Testimonials highlight Beacube's commitment to expanding clients' visions, revitalizing operations, and delivering exceptional digital solutions that exceed expectations, positioning clients ahead of the curve in the digital landscape.",
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question: "What distinguishes Beacube's approach to digital marketing?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Beacube is a full-service digital marketing agency dedicated to crafting digital experiences that propel brands forward, amplifying online voices, and delivering measurable results that drive tangible growth in today's dynamic digital landscape.",
     },
     {
       number: "01",
-      question: "What services do you offer for branding?",
+      question:
+        "How does Beacube leverage Artificial Intelligence to enhance digital solutions?",
       answer:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits.",
+        "Beacube harnesses the power of Artificial Intelligence to optimize processes, enhance user experiences, and pioneer new interaction paradigms, empowering digital products to be more intuitive, efficient, and engaging.",
     },
   ],
 };
@@ -286,26 +290,26 @@ const footer = {
   },
   links: {
     heading: "Quick Link",
-    linkObject:[
+    linkObject: [
       {
-        text:"Home",
-        href:"/",
+        text: "Home",
+        href: "/",
       },
       {
-        text:"About Us",
-        href:"/pages/About",
+        text: "About Us",
+        href: "/pages/About",
       },
       {
-        text:"Services",
-        href:"/pages/Services",
+        text: "Services",
+        href: "/pages/Services",
       },
       {
-        text:"Blog",
-        href:"/pages/HeaderBlog",
+        text: "Blog",
+        href: "/pages/HeaderBlog",
       },
       {
-        text:"Contact Us",
-        href:"/pages/Contact",
+        text: "Contact Us",
+        href: "/pages/Contact",
       },
     ],
   },
