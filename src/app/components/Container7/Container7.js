@@ -65,7 +65,7 @@ const Container7 = ({ header, blogPage, homePage }) => {
             homePage && isSmallScreen
               ? ""
               : homePage && !isSmallScreen
-              ? "400px"
+              ? "32.73809523809524vw"
               : "",
           flexWrap:
             homePage && isSmallScreen

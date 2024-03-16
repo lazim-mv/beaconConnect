@@ -82,7 +82,6 @@ const page = () => {
           <div className={styles.forButton}>
             <BtnComponent
               buttonText="Send Message"
-              // borderColor="rgba(255, 255, 255, 0.6)"
               bg="#11215B"
               color="#fff"
               contact={true}

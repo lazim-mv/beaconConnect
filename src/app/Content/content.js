@@ -1,8 +1,8 @@
 const heroData = {
-  sectionTitle: "Unlocking Digital Potential: Where Vision Becomes Reality",
+  sectionTitle: "Unleash Your Digital Potential. We Engineer Growth",
   btnText: "Our Services",
   description:
-    "Beacube unlocks your digital potential, turning vision into reality. Explore our transformative solutions and unleash the power of your brand.",
+    "we engineer growth by unlocking your digital potential. Explore our transformative technology and marketing solutions to unleash the power of your brand.",
   texts: [
     "scale businesses",
     "transform lives",
@@ -33,9 +33,9 @@ const container1Data = {
   mImg: "/Container1/1m.png",
   btnText: "Contact Us",
   description1:
-    "At the heart of our philosophy lies the belief that a brand's essence and user experience (UX) are intrinsically linked, forming the cornerstone of digital identity. Our dedicated team excels in shaping and projecting digital brand identities across various platforms, offering strategic support and guidelines to ensure seamless consistency. ",
+    "Welcome to Beacube, your premier technology solution provider. At Beacube, we specialize in crafting tailored digital solutions that empower businesses to thrive in the digital landscape. From cutting-edge digital marketing strategies to bespoke web applications and intuitive dashboards, we offer a comprehensive suite of services designed to elevate your brand and drive results.",
   description2:
-    "Join us at Nexwave, where we turn visionary ideas into tangible realities, fostering growth and redefining what it means to be a brand in the digital age.",
+    "With our passion for innovation and commitment to excellence, we'll work tirelessly to ensure that your vision becomes a reality. Join us at Beacube and let's embark on a journey of digital transformation together.",
 };
 
 const container2Data = {
@@ -50,31 +50,31 @@ const container2Data = {
       cardHeading: "Digital Strategy",
       img: "/Container2/1.png",
       description:
-        "Maximize growth with our strategic, technology-led approach. We tailor digital initiatives to your goals, enhancing brand visibility and driving conversions for impactful results in the digital arena.",
+        "Craft a winning digital strategy tailored to your business objectives. We analyze market trends, audience behavior, and competition to develop a roadmap that maximizes your online presence and drives sustainable growth.",
     },
     {
-      cardHeading: "Artificial Intelligence",
+      cardHeading: "Data & AI",
       img: "/Container2/5.png",
       description:
-        "Leverage the power of data and AI to gain a competitive edge. Our expertise in AI integration and data analytics transforms your processes, making your digital products smarter and more user-centric.",
+        "Harness the power of AI to streamline processes, enhance decision-making, and unlock new opportunities. Our AI solutions leverage advanced algorithms and machine learning techniques to optimize operations and deliver actionable insights.",
     },
     {
       cardHeading: "Development",
       img: "/Container2/3.png",
       description:
-        "Build the foundation of your digital success with our development services. From web to mobile apps, we deliver robust, scalable, and intuitive solutions that meet your business needs and exceed user expectations.",
+        "Build robust and scalable software solutions customized to your specific needs. Our development team excels in creating high-performance applications, websites, and mobile apps that elevate your digital presence and deliver exceptional user experiences.",
     },
     {
       cardHeading: "Design",
       img: "/Container2/2.png",
       description:
-        "Craft compelling user experiences with our design services. We focus on creating visually stunning and highly usable designs that resonate with your audience and strengthen your brand identity.",
+        "Create visually stunning designs that captivate audiences and reflect your brand identity. From website interfaces to graphic elements, our design experts combine creativity with functionality to deliver compelling visuals that leave a lasting impression.",
     },
     {
       cardHeading: "Marketing & Growth",
       img: "/Container2/4.png",
       description:
-        "Fuel your brand's growth with our targeted marketing strategies. We combine creativity with analytics to boost your online presence, engage your audience, and achieve sustainable growth.",
+        "Drive traffic, engagement, and conversions with strategic marketing initiatives. Our comprehensive approach to marketing and growth encompasses SEO, content marketing, social media management, and targeted advertising campaigns to expand your reach and accelerate business growth.",
     },
   ],
 };
@@ -184,7 +184,7 @@ const container6Data = {
       img: "/Container6/3.png",
       cardHeading: "Design",
       description:
-        "Our creative team translates strategic insights into compelling designs, crafting a resonant and engaging user experience.",
+        "With our strategy set, we create bespoke solutions tailored to your needs. From UX/UI design to process optimization and seamless tech integration, we ensure every aspect aligns with your brand identity for maximum impact",
     },
     {
       number: "04",
@@ -279,19 +279,60 @@ const footer = {
   address: {
     heading: "Let’s Start a conversation",
     texts: [
-      "nexwave@gmail.com",
-      "+91 9645013281",
-      "North York, Toronto, Ontario M9L1N2",
+      "info@bmcglobal.co ",
+      "+966539067414",
+      "Le Cygne Commercial Center 2 6th Floor Al-Arz Al-Olaya, Riyadh 12611, SA",
     ],
   },
   links: {
     heading: "Quick Link",
-    texts: ["Home", "About Us", "Services", "Blog", "Contact Us"],
-    href: ["/", "pages/About", "pages/Services", "", "pages/Contact"],
+    linkObject:[
+      {
+        text:"Home",
+        href:"/",
+      },
+      {
+        text:"About Us",
+        href:"/pages/About",
+      },
+      {
+        text:"Services",
+        href:"/pages/Services",
+      },
+      {
+        text:"Blog",
+        href:"/pages/HeaderBlog",
+      },
+      {
+        text:"Contact Us",
+        href:"/pages/Contact",
+      },
+    ],
   },
   social: {
     heading: "Follow Us",
-    texts: ["Twitter", "Instagram", "Facebook", "Linked In", "Whatsapp"],
+    links: [
+      {
+        text: "Twitter",
+        href: "",
+      },
+      {
+        text: "Instagram",
+        href: "https://www.instagram.com/beaconglobal.co?igsh=a2tvdDY2dnh6cDVk",
+      },
+      {
+        text: "Facebook",
+        href: "",
+      },
+      {
+        text: "Linked In",
+        href: "https://www.linkedin.com/company/beacon-management-consultants",
+      },
+      {
+        text: "Whatsapp",
+        href: "",
+      },
+    ],
   },
 };
 

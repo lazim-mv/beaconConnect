@@ -16,9 +16,9 @@ const Hero = () => {
     <>
       <div className={styles.container1}>
         <SectionTitle
-          sectionText="Unlocking Digital Potential: Where Vision Becomes Reality"
+          sectionText="Unleash Your Digital Potential. We Engineer&nbsp;Growth"
           color="#fff"
-          wordIndex={[3, 4, 5, 6]}
+          wordIndex={[ 4, 5, 6]}
         />
         <SectionDescription
           sectionText={heroData.description}

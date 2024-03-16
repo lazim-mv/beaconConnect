@@ -16,21 +16,25 @@ const Footer = () => {
       </div>
       <div className={styles.linksList}>
         <h6 className={styles.heading}>{footer.links.heading}</h6>
-        {footer.links.texts.map((data, index) => (
+        {footer.links.linkObject.map((data, index) => (
           <a
             className={`${styles.text} ${styles.hover}`}
-            href={footer.links.href[index]}
+            href={data.href}
             key={index}
           >
-            {data}
+            {data.text}
           </a>
         ))}
       </div>
       <div className={styles.social}>
         <h6 className={styles.heading}>{footer.social.heading}</h6>
-        {footer.social.texts.map((data, index) => (
-          <a href={data.href} className={`${styles.text} ${styles.hover}`} key={index}>
-            {data}
+        {footer.social.links.map((data, index) => (
+          <a
+            href={data.href}
+            className={`${styles.text} ${styles.hover}`}
+            key={index}
+          >
+            {data.text}
           </a>
         ))}
       </div>
@@ -45,7 +49,9 @@ const Footer = () => {
             className={styles.footerLogo}
           />
         </a>
-        <p>{footer.copyRight}</p>
+        <a href="https://procube.cx/" target="_blank">
+          <p>{footer.copyRight}</p>
+        </a>
       </div>
     </div>
   );

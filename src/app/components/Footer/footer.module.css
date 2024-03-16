@@ -56,6 +56,10 @@
   grid-template-rows: 19.510582010582013vw 7.2751322751322745vw;
 }
 
+.address p:last-child{
+  width: 55%;
+}
+
 .heading {
   color: rgba(255, 255, 255, 0.6);
   font-size: var(--font18);

@@ -3,7 +3,7 @@ const container1 = {
   img: "/AboutPage/1.png",
   mImg: "/AboutPage/1m.png",
   description1:
-    "At Nexwave, we're passionate about empowering businesses like yours to thrive in today's dynamic digital landscape. We are a full-service digital marketing agency dedicated to crafting digital experiences that propel your brand forward and amplify your online voice.",
+    "At Beacube, we're passionate about empowering businesses like yours to thrive in today's dynamic digital landscape. We are a full-service digital marketing agency dedicated to crafting digital experiences that propel your brand forward and amplify your online voice.",
   description2:
     "Your success is our priority. We're committed to delivering measurable results that ignite your digital presence, drive tangible growth, and empower your brand to reach its full potential",
 };
@@ -19,7 +19,7 @@ const container2 = {
   mission: {
     sectionTitle: "Our Mission",
     description:
-      "At Nexwave, our mission is to empower brands through deep collaboration and steadfast commitment. We strive to create unique connections between our clients and their audiences, leveraging our comprehensive expertise in digital marketing. We deliver on our promises with integrity and diligence, positioning your brand at the forefront of your industry.",
+      "At Beacube, our mission is to empower brands through deep collaboration and steadfast commitment. We strive to create unique connections between our clients and their audiences, leveraging our comprehensive expertise in digital marketing. We deliver on our promises with integrity and diligence, positioning your brand at the forefront of your industry.",
   },
 };
 
