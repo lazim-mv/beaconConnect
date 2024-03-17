@@ -1,11 +1,11 @@
 const container1 = {
-  sectionTitle: "We Accelerate Growth Through Digital Marketing Solutions",
+  sectionTitle: "We Accelerate Growth Through Technology & Marketing Solutions",
   img: "/AboutPage/1.png",
   mImg: "/AboutPage/1m.png",
   description1:
-    "At Beacube, we're passionate about empowering businesses like yours to thrive in today's dynamic digital landscape. We are a full-service digital marketing agency dedicated to crafting digital experiences that propel your brand forward and amplify your online voice.",
+    "At Beacube, we're your dedicated partners in navigating the complexities of the digital world. Specializing in holistic digital strategies and essential tech support, we empower businesses to thrive in today's dynamic landscape. Our mission is clear: to propel your brand forward and amplify your online voice.",
   description2:
-    "Your success is our priority. We're committed to delivering measurable results that ignite your digital presence, drive tangible growth, and empower your brand to reach its full potential",
+    "With a commitment to delivering measurable results and driving tangible growth, we're here to help your brand reach its full potential. Partner with us for digital excellence and unlock endless opportunities for your business.",
 };
 
 const container2 = {
@@ -14,12 +14,12 @@ const container2 = {
   vision: {
     sectionTitle: "Our Vision",
     description:
-      "We aim to lead the future of digital marketing by equipping brands with innovative and sustainable solutions. Our vision is a world where businesses of all sizes can leverage digital technology to reach their highest potential, connecting meaningfully with audiences around the globe.",
+      "We aspire to pioneer the future of digital strategy by providing brands with inventive and enduring solutions. Our vision encompasses a world where businesses, regardless of size, harness digital technology to unlock their utmost capabilities, establishing meaningful connections with audiences worldwide.",
   },
   mission: {
     sectionTitle: "Our Mission",
     description:
-      "At Beacube, our mission is to empower brands through deep collaboration and steadfast commitment. We strive to create unique connections between our clients and their audiences, leveraging our comprehensive expertise in digital marketing. We deliver on our promises with integrity and diligence, positioning your brand at the forefront of your industry.",
+      "At Beacube, we're not just a tech company; we're your comprehensive digital support system, committed to facilitating business growth. Our mission is to empower organizations with the tools and strategies they need to thrive in today's digital landscape, ensuring they reach their highest potential. Join us in shaping a digital future where businesses flourish and opportunities abound.",
   },
 };
 

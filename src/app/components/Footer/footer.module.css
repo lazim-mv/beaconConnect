@@ -116,12 +116,16 @@
     width: 100vw;
     display: grid;
     gap: 8vw;
-    grid-template-rows: 47.5vw 42.5vw 15.2vw;
+    grid-template-rows: 39.5vw 42.5vw 15.2vw;
     grid-template-columns: 40.6666666667vw 40.6666666667vw;
   }
 
   .address {
     grid-column: span 2;
+  }
+
+  .address p:last-child{
+    width: 75%;
   }
 
   .heading {
