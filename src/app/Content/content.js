@@ -134,27 +134,27 @@ const container5Data = {
   btnText: "All Work",
   cardData: [
     {
-      img: "/Container5/Beacube/1.png",
+      img: "/Container5/1.png",
       cardHeading: "Beacon Management Consultants",
       btnText: "Website",
     },
     {
-      img: "/Container5/Beacube/2.png",
+      img: "/Container5/2.png",
       cardHeading: "Gisco Contracting Company",
       btnText: "Website",
     },
     {
-      img: "/Container5/Beacube/3.png",
+      img: "/Container5/3.png",
       cardHeading: "Petbey App",
       btnText: "Mobile App",
     },
     {
-      img: "/Container5/Beacube/5.png",
+      img: "/Container5/5.png",
       cardHeading: "Hyperama",
       btnText: "Ecommerce",
     },
     {
-      img: "/Container5/Beacube/6.png",
+      img: "/Container5/6.png",
       cardHeading: "Riyas Hakkim",
       btnText: "Personal Portfolio",
     },
