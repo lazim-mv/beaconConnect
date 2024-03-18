@@ -68,30 +68,37 @@ const Page = () => {
           {container2.cardData.map((data, index) => (
             <div className={styles.card} key={index} id={data.id}>
               {/* <RevealAffect> */}
-                <div className={styles.serviceImgContainer}>
-                  <ServiceImageAffect
-                    speed={isSmallScreen ? 20 : 60}
-                    height={isSmallScreen ? "auto" : "auto"}
-                    width={isSmallScreen ? "87.2vw" : "auto"}
-                  >
-                    <Image
-                      // ref={(ref) => (cardImg.current[index] = ref)}
-                      unoptimized
-                      src={isSmallScreen ? data.mImg : data.img}
-                      priority={true}
-                      width={100}
-                      height={0}
-                      alt="ImageClients"
-                      className={styles.serviceImg}
-                    />
-                  </ServiceImageAffect>
+              <div className={styles.serviceImgContainer}>
+                <ServiceImageAffect
+                  speed={isSmallScreen ? 20 : 60}
+                  height={isSmallScreen ? "auto" : "auto"}
+                  width={isSmallScreen ? "87.2vw" : "auto"}
+                >
+                  <Image
+                    // ref={(ref) => (cardImg.current[index] = ref)}
+                    unoptimized
+                    src={isSmallScreen ? data.mImg : data.img}
+                    priority={true}
+                    width={100}
+                    height={0}
+                    alt="ImageClients"
+                    className={styles.serviceImg}
+                  />
+                </ServiceImageAffect>
+              </div>
+              <SectionTitle sectionText={data.sectionTitle} />
+              <div className={styles.descContainer}>
+                <SectionDescription sectionText={data.description1} />
+                {/* <SectionDescription sectionText={data.description2} /> */}
+                <div className={styles.keywordContainer}>
+                  {data.description2.map((item, index) => (
+                    <p className={styles.keywords} key={index}>
+                      {item}
+                    </p>
+                  ))}
                 </div>
-                <SectionTitle sectionText={data.sectionTitle} />
-                <div className={styles.descContainer}>
-                  <SectionDescription sectionText={data.description1} />
-                  <SectionDescription sectionText={data.description2} />
-                </div>
-                <hr />
+              </div>
+              <hr />
               {/* </RevealAffect> */}
             </div>
           ))}
