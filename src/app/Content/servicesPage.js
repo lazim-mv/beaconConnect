@@ -26,7 +26,7 @@ const container2 = {
       description1:
         "Empower your business with the transformative capabilities of data using artificial intelligence (AI). Our AI solutions are designed to streamline processes, optimize operations, and unlock new opportunities for growth. Leveraging data and advanced algorithms and machine learning techniques, we develop intelligent systems that can analyze data, make future predictions, and automate tasks with precision. Whether it's enhancing decision-making, personalizing user experiences, or automating repetitive tasks, our AI solutions are tailored to meet your unique needs and propel your business forward in the age of digital disruption.",
       description2:
-        "• Predictive Modeling •  Demand planning •  Predictive Analytics • optimize operations  • Business Intelligence • Sentiment • Analysis Image Recognition • Chatbots",
+        "• Predictive Modeling •  Demand planning •  Predictive Analytics • optimize operations  • Business Intelligence • Sentiment Analysis • Image Recognition • Chatbots",
     },
     {
       id: "Development",
