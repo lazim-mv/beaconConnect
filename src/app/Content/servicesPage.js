@@ -43,8 +43,6 @@ const container2 = {
         "Business Intelligence",
         "Demand planning",
         "Predictive Analytics",
-        "Sentiment Analysis",
-        "Fraud Detection",
       ],
     },
     {
