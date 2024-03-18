@@ -68,6 +68,10 @@
   letter-spacing: var(--letterSpace18);
 }
 
+.testimonialText{
+  height: 13.558201058201059vw;
+}
+
 .profile {
   /* display: flex; */
   margin-top: var(--margin30);
@@ -134,6 +138,10 @@
     font-size: var(--mfont12);
     line-height: var(--mlineHeight12);
     letter-spacing: var(--mletterSpace12);
+  }
+
+  .testimonialText{
+    height: 53.86666666666666vw;
   }
 
   .profile {
