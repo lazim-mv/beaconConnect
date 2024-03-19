@@ -86,44 +86,44 @@ const container3Data = {
     {
       name: "Haris Abdurahman",
       company: "Gazaal perfumes",
-      img: "/Container3/2.png",
+      img: "/Container3/22.jpg",
       description:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
+        "Beacube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
     },
     {
       name: "Jaseem ummer",
       company: "Intercool",
-      img: "/Container3/3.png",
+      img: "/Container3/33.jpg",
       description:
-        "Working with the Procube team was an absolute pleasure. Their expertise and meticulous attention to detail were exceptional, surpassing our expectations. We wholeheartedly recommend them for their hard work and dedication. A heartfelt thank you for their exceptional hard work and commitment throughout the journey.",
+        "Working with the Beacube team was an absolute pleasure. Their expertise and meticulous attention to detail were exceptional, surpassing our expectations. We wholeheartedly recommend them for their hard work and dedication. A heartfelt thank you for their exceptional hard work and commitment throughout the journey.",
     },
     {
       name: "Raji thomas",
       company: "Alweena perfumes",
-      img: "/Container3/1.png",
+      img: "/Container3/11.jpg",
       description:
-        "I just wanted to give a shoutout to the team at Procube for being so easy to approach and work with. They were always available to answer my questions and were super patient with me, even when/ had a million things going on. It was a pleasure working with such a friendly and approachable team. Thanks guys!",
+        "I just wanted to give a shoutout to the team at Beacube for being so easy to approach and work with. They were always available to answer my questions and were super patient with me, even when/ had a million things going on. It was a pleasure working with such a friendly and approachable team. Thanks guys!",
     },
     {
       name: "Haris Abdurahman",
       company: "Gazaal perfumes",
-      img: "/Container3/2.png",
+      img: "/Container3/22.jpg",
       description:
-        "Procube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
+        "Beacube completely transformed our business with their careful redesign of my business. They helped us to not only improve the look of our brand, but also to streamline our processes and increase our profits. We've seen tremendous growth since working with them and can't thank them enough for their help. Highly recommend!",
     },
     {
       name: "Jaseem ummer",
       company: "Intercool",
-      img: "/Container3/3.png",
+      img: "/Container3/33.jpg",
       description:
-        "Working with the Procube team was an absolute pleasure. Their expertise and meticulous attention to detail were exceptional, surpassing our expectations. We wholeheartedly recommend them for their hard work and dedication. A heartfelt thank you for their exceptional hard work and commitment throughout the journey.",
+        "Working with the Beacube team was an absolute pleasure. Their expertise and meticulous attention to detail were exceptional, surpassing our expectations. We wholeheartedly recommend them for their hard work and dedication. A heartfelt thank you for their exceptional hard work and commitment throughout the journey.",
     },
     {
       name: "Raji thomas",
       company: "Alweena perfumes",
-      img: "/Container3/1.png",
+      img: "/Container3/11.jpg",
       description:
-        "I just wanted to give a shoutout to the team at Procube for being so easy to approach and work with. They were always available to answer my questions and were super patient with me, even when/ had a million things going on. It was a pleasure working with such a friendly and approachable team. Thanks guys!",
+        "I just wanted to give a shoutout to the team at Beacube for being so easy to approach and work with. They were always available to answer my questions and were super patient with me, even when/ had a million things going on. It was a pleasure working with such a friendly and approachable team. Thanks guys!",
     },
   ],
 };
@@ -279,7 +279,7 @@ const contact = {
 
 const footer = {
   img: "/hLogo.svg",
-  copyRight: "© 2023 All Right Reserved | Powered by procube.cx",
+  copyRight: "© 2023 All Right Reserved | Powered by Procube.cx",
   address: {
     heading: "Let’s Start a conversation",
     texts: [
