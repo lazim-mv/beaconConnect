@@ -283,8 +283,8 @@ const footer = {
   address: {
     heading: "Let’s Start a conversation",
     texts: [
-      "info@bmcglobal.co ",
-      "+966539067414",
+      "contact@beacube.com ",
+      "+966 531299166 ",
       "Le Cygne Commercial Center 2 6th Floor Al-Arz Al-Olaya, Riyadh 12611, SA",
     ],
   },

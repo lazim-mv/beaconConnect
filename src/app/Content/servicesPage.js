@@ -96,7 +96,7 @@ const container2 = {
       description2: [
         "Digital Marketing",
         "Content marketing",
-        "Supply chain management",
+        "Search engine marketing",
         "Search Engine Optimization (SEO)",
         "Social Media Marketing",
         "Digital ads",

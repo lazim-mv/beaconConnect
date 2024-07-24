@@ -8,9 +8,9 @@ const contactSection = {
   location:
     "Le Cygne Commercial Center 2 6th Floor Al-Arz Al-Olaya, Riyadh 12611, SA",
   locationIcon: "/ContactPage/2.svg",
-  phoneNumber: "+966539067414, +966531299166",
+  phoneNumber: "+966 531299166 , +966531299166",
   callIcon: "/ContactPage/3.svg",
-  mail: "info@bmcglobal.co",
+  mail: "contact@beacube.com",
   mailIcon: "/ContactPage/2.svg",
 };
 
