@@ -77,7 +77,7 @@
   letter-spacing: var(--letterSpace18);
 }
 
-.keywordContainer{
+.keywordContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 1.0582010582010581vw;
@@ -96,6 +96,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   color: #12171c;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .container2 {
@@ -194,12 +195,12 @@
     letter-spacing: var(--mletterSpace12);
   }
 
-  .keywordContainer{
+  .keywordContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.666666666666667vw 1.1582010582010581vw ;
+    gap: 2.666666666666667vw 1.1582010582010581vw;
   }
-  
+
   .keywordContainer .keywords {
     width: fit-content;
     border: 0.26666666666666666vw solid rgba(255, 255, 255, 0.8);
